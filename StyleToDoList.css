@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+ 
+.todo-container {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: #a4d0f1;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+li:nth-child(even) {
+    background-color: skyblue;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 15px;
+
+}
+
+li span.task-text {
+    margin-left: 20px;
+
+}
+
+li.completed span.task-text {
+    text-decoration: line-through;
+}
+
+li.completed {
+    background-color: lightgray;
+}
+
+p {
+    text-indent: 50px;
+    /* Indents the first line of the paragraph */
+    font-size: 16px;
+    line-height: 1.6;
+}

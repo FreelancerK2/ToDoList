@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="StyleToDoList.css">
+</head>
+ 
+<body>
+    <h1 style="text-align: left;">Task 2 <h3 style="text-align: left;">Implement an HTML page with a list of tasks.</h3>
+        <p>
+            The visual separation of the list is achieved by setting the blue background of various shades for even and
+            odd items.</p>
+        <p>The marked items have a gray background, they are checked, and the text is crossed out. The unmarked items of
+            the list are unchecked.</p>
+        <p>You can display the red cross with a special character.</p>
+        <p>The required icons are atteched to the PDF file of this Homework.*</p>
+        <h3>Example of the final result:</h3>
+    </h1>
+    <div class="todo-container">
+        <h2>My To Do List</h2>
+        <ul>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Hit the
+                        gym</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Pay
+                        bills</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Meet
+                        John</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Buy
+                        eggs</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Read a
+                        book</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Organize
+                        office</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Eat
+                        dinner</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Buy
+                        apples</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Meet
+                        George</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Feed the
+                        cat</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Write a
+                        letter</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+            <li><label><input type="checkbox" onchange="toggleCompletion(this)"><span class="task-text">Run 1
+                        km</span></label><span style="margin-left: 20px; color: red;">&#x2718</span></li>
+        </ul>
+    </div>
+    <script>
+        function toggleCompletion(checkbox)
+        {
+            const listItem = checkbox.closest('li');
+            if (checkbox.checked)
+            {
+                listItem.classList.add('completed');
+            } else
+            {
+                listItem.classList.remove('completed');
+            }
+        }
+    </script>
+</body>
+
+</html>
